@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <form class="cart_form" action="https://echo.htmlacademy.ru" method="post">
+      <table class="cart_product">
+        <tr>
+          <td>
+            <button class="remove-product" type="button" title="Убрать с корзины"></button>
+          </td>
+          <td class="selected_item">
+            <img src="img/item_mini.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+          </td>
+          <td class="product_name">Пломбир с апельсиновым джемом</td>
+          <td class="prise_product">1.5 кг <span>х 200руб.</span></td>
+          <td class="sum">300 руб.</td>
+        </tr>
+        <tr>
+          <td><button class="remove_product" type="button" title="Убрать с корзины"></button></td>
+          <td class="selected_item">
+            <img src="img/item_mini_2.png" width="33" height="33" alt=" Клубничный пломбир с присыпкой из белого шоколада">
+          </td>
+          <td class="product_name">Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td class="prise_product">1.5 кг <span>х 300 руб.</span></td>
+          <td class="sum">450 руб.</td>
+        </tr>
+        <tr>
+          <td class="total" colspan="5">Итого: 750 руб.</td>
+        </tr>
+      </table>
+      <button class="btn" type="submit">оформить заказ</button>
+    </form>
+  </body>
+</html>
