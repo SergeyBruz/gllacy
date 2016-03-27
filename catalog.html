@@ -61,33 +61,31 @@
             <a class="full_cart" href="#">2 товара</a>
             <div class="cart_box">
               <form class="cart_form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="cart_product">
-                  <div class="cart_row">
-                    <div class="cart_cell">
-                      <button class="remove_product" type="button" title="Убрать с корзины"></button>
-                    </div>
-                    <div class="cart_cell selected_item">
+                <table class="cart_product">
+                  <tr>
+                    <td>
+                      <button class="remove-product" type="button" title="Убрать с корзины"></button>
+                    </td>
+                    <td class="selected_item">
                       <img src="img/item_mini.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                    </div>
-                    <div class="cart_cell product_name">Пломбир с апельсиновым джемом</div>
-                    <div class="cart_cell prise_product">1.5 кг <span>х 200руб.</span></div>
-                    <div class="cart_cell sum">300 руб.</div>
-                  </div>
-                  <div class="cart_row">
-                    <div class="cart_cell">
-                      <button class="remove_product" type="button" title="Убрать с корзины"></button>
-                    </div>
-                    <div class="cart_cell selected_item">
+                    </td>
+                    <td class="product_name">Пломбир с апельсиновым джемом</td>
+                    <td class="prise_product">1.5 кг <span>х 200руб.</span></td>
+                    <td class="sum">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td><button class="remove_product" type="button" title="Убрать с корзины"></button></td>
+                    <td class="selected_item">
                       <img src="img/item_mini_2.png" width="33" height="33" alt=" Клубничный пломбир с присыпкой из белого шоколада">
-                    </div>
-                    <div class="cart_cell product_name">Клубничный пломбир с присыпкой из белого шоколада</div>
-                    <div class="cart_cell prise_product">1.5 кг <span>х 300 руб.</span></div>
-                    <div class="cart_cell sum">450 руб.</div>
-                  </div>
-                  <div class="cart_total">
-                    <span class="total">Итого: 750 руб.</span>
-                  </div>
-                </div>
+                    </td>
+                    <td class="product_name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="prise_product">1.5 кг <span>х 300 руб.</span></td>
+                    <td class="sum">450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="total" colspan="5">Итого: 750 руб.</td>
+                  </tr>
+                </table>
                 <button class="btn" type="submit">оформить заказ</button>
               </form>
             </div>
@@ -114,9 +112,9 @@
       <main class="content catalog_content">
         <h1>Сливочное мороженое</h1>
         <div class="filters_items clearfix">
-          <form class="form_sort" method="post">
+          <form class="form_sort"method="post">
             <div class="filter_item">
-              <label >Сортировка:</label>
+              <label for="sorting">Сортировка: </label>
               <div class="select_wrapper">
               <select name="sorting">
                 <option selected value="по популярности">по популярности</option>
@@ -273,6 +271,5 @@
           </div>
         </footer>
     </div>
-  </div>
   </body>
 </html>
